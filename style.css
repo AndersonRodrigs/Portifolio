@@ -21,6 +21,11 @@ body {
   height: 100%;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Poppins;
   background-color: var(--Balck);
@@ -45,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+.menu-mbl {
+  display: block;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -55,8 +64,7 @@ a {
   padding-inline: 6%;
 
   position: fixed;
-  border-end-start-radius: 20px;
-  border-end-end-radius: 20px;
+
 
   background-color: var(--Blue);
   color: var(--White);
@@ -359,8 +367,6 @@ textarea {
   height: 200px;
   padding-inline: 6%;
   margin-top: 80px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   background-color: var(--Blue);
 }
 
@@ -393,6 +399,96 @@ textarea {
   text-decoration: underline var(--Grey);
 }
 
+/* Menu amburger */
+
+.menu {
+  border-left: 2px solid var(--White);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  margin-top: 100px;
+}
+
+.menu ul li{
+
+ margin-right: 40px;
+ margin-top: 10px;
+}
+
+.menu ul li a {
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  padding-inline: 10px;
+
+  border-radius: 10px;
+  background-color: #311b92;
+}
+
+.menu ul li a:hover {
+  background-color: var(--Blue-hover);
+}
+
+.closeMenu {
+  display: flex;
+  top: 0;
+  position: absolute;
+  align-items: center;
+
+  height: 65px;
+  margin-left: 80%;
+}
+
+/* .fa-x {
+
+} */
+
+
+.menu-mbl i {
+  font-size: 30px;
+}
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+
+.menu {
+  transform: translateX(100%);
+  width: 50%;
+}
+
+
+body.menu-expanded .menu {
+  top: 0;
+  left: 50%;
+  background: var(--Blue);
+
+  width: 50%;
+  height: 100%;
+
+  padding-top: var(--Blue-hover);
+
+  transition: transform 300ms;
+
+  transform: translateY(0%);
+}
+
+
+.menu a {
+  color: white;
+}
+
+nav .menu {
+  position: fixed;
+}
+
+
+
+
 /* RESPONSSIVO */
 @media (min-width: 1000px) {
   /* .content * {
@@ -423,6 +519,10 @@ textarea {
 
   .contato {
     display: block;
+  }
+
+  .menu-mbl {
+    display: none;
   }
 
   .content-text {
