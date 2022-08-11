@@ -21,7 +21,6 @@ body {
   height: 100%;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -65,18 +64,17 @@ a {
 
   position: fixed;
 
-
   background-color: var(--Blue);
   color: var(--White);
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .contato ul li a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 
   color: var(--White);
@@ -412,10 +410,9 @@ textarea {
   margin-top: 100px;
 }
 
-.menu ul li{
-
- margin-right: 40px;
- margin-top: 10px;
+.menu ul li {
+  margin-right: 40px;
+  margin-top: 10px;
 }
 
 .menu ul li a {
@@ -446,7 +443,6 @@ textarea {
 
 } */
 
-
 .menu-mbl i {
   font-size: 30px;
 }
@@ -455,12 +451,10 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-
 .menu {
   transform: translateX(100%);
   width: 50%;
 }
-
 
 body.menu-expanded .menu {
   top: 0;
@@ -477,7 +471,6 @@ body.menu-expanded .menu {
   transform: translateY(0%);
 }
 
-
 .menu a {
   color: white;
 }
@@ -485,9 +478,6 @@ body.menu-expanded .menu {
 nav .menu {
   position: fixed;
 }
-
-
-
 
 /* RESPONSSIVO */
 @media (min-width: 1000px) {
