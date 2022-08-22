@@ -10,7 +10,8 @@
   --Low-priority: #848191;
   --Primary-colour: #7562e0;
   --Secondary-colour: #282162;
-  --Dark-colour:#000036;
+  --Dark-colour: #000036;
+  --Dark-color2: #000042;
 }
 
 html,
@@ -29,3 +30,87 @@ body {
   color: var(--White);
 }
 
+.container {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .container {
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  top: 0;
+  background-color: var(--Dark-colour);
+}
+
+
+#home {
+  padding-top: 95px;
+  background-color: var(--Dark-color2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+#home .image {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 224px;
+}
+
+.information h1 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 47px;
+  color: var(--Light-colour);
+}
+
+.information h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 47px;
+  color: var(--White);
+}
+
+.information p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.12rem;
+  color: var(--White);
+}
+
+.buttons{
+ margin-top: 20px;
+}
+
+.buttons a {
+  width: 114px;
+  height: 46px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 32px;
+  color: var(--White);
+  border: 2px solid var(--Primary-colour);
+}
+
+.buttons a:hover{
+  background-color: var(--Primary-colour);
+}
