@@ -6,11 +6,10 @@
 
 :root {
   --White: #fff;
-  --Light-colour: #f5f5f5;
-  --Low-priority: #848191;
-  --Primary-colour: #7562e0;
-  --Secondary-colour: #282162;
-  --Dark-colour: #000036;
+  --Black-colour: #000000;
+  --Low-priority: #383838;
+  --Secondary-colour: #2000e7;
+  --Dark-colour: #0e0578;
 }
 
 html,
@@ -25,14 +24,15 @@ html {
 
 body {
   font-family: Poppins;
-  background-color: var(--Dark-colour);
-  color: var(--White);
+  background-color: var(--White);
+  color: var(--Black-colour);
 }
 
 .container {
   width: 100%;
   padding-left: 32px;
   padding-right: 32px;
+  text-align: center;
 }
 
 a {
@@ -45,19 +45,26 @@ nav .container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   top: 0;
-  background-color: var(--Dark-colour);
+  z-index: 100;
+  color: var(--Low-priority);
+  background-color: var(--White);
 }
 
+.logo h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 72px;
+  color: var(--Dark-colour);
+}
 
 #home {
-  padding-top: 95px;
-
+  padding-top: 150px;
   display: flex;
   justify-content: center;
-  text-align: center;
   width: 100%;
   height: 600px;
 }
@@ -69,15 +76,16 @@ nav .container {
 
 img {
   width: 224px;
+  filter: drop-shadow(26px -22px 0px var(--Dark-colour));
+  border-radius: 0px 0px 0px 60px;
 }
 
 .information h1 {
-  width: 100%;
   font-style: normal;
   font-weight: 600;
   font-size: 2.2rem;
   line-height: 47px;
-  color: var(--Light-colour);
+  color: var(--Secondary-colour);
 }
 
 .information h3 {
@@ -85,31 +93,115 @@ img {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 47px;
-  color: var(--White);
+  color: var(--Secondary-colour);
 }
 
-.information p {
+p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.12rem;
-  color: var(--White);
+  color: var(--Low-priority);
 }
 
-.buttons{
- margin-top: 20px;
+.buttons {
+  margin-top: 40px;
 }
 
-.buttons a {
+a {
   width: 114px;
-  height: 46px;
   margin: 10px;
-  padding: 10px 24px;
+  padding: 5px 24px;
   border-radius: 8px;
   border: none;
-  color: var(--White);
-  border: 2px solid var(--Primary-colour);
+  color: var(--Secondary-colour);
+  border: 2px solid var(--Secondary-colour);
+  
+  box-shadow: 10px 9px 15px 1px rgba(0, 0, 0, 0.25);
 }
 
-.buttons a:hover{
-  background-color: var(--Primary-colour);
+.buttons a:hover {
+  color: var(--White);
+  background-color: var(--Secondary-colour);
+  transition: 0.3s;
+}
+
+#about {
+  height: 520px;
+  padding-top: 80px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2, 31rem;
+  line-height: 37px;
+  color: var(--Dark-colour);
+}
+
+#skils {
+  height: 600px;
+  padding-top: 100px;
+}
+
+.skils-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#skils span {
+  margin: 40px;
+  width: 100px;
+  text-align: center;
+}
+
+.skils-img span i {
+  font-size: 5.93rem;
+
+  color: var(--Secondary-colour);
+}
+
+.skils-img span i:hover {
+  filter: drop-shadow(7px -2px 2px #000c77);
+  transition: .2s;
+}
+
+.projects {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  width: 314px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 2px 10px 12px 2px var(--Low-priority);
+  transition: .3s;
+}
+
+.card p {
+  height: 180px;
+}
+
+.card img {
+  width: 90%;
+  filter: drop-shadow(16px -12px 0px var(--Dark-colour));
+  border-radius: 10px;
+}
+
+.card a:hover {
+  color: var(--White);
+  background-color: var(--Secondary-colour);
+  transition: .3s;
 }
