@@ -11,7 +11,6 @@
   --Primary-colour: #7562e0;
   --Secondary-colour: #282162;
   --Dark-colour: #000036;
-  --Dark-color2: #000042;
 }
 
 html,
@@ -55,7 +54,7 @@ nav .container {
 
 #home {
   padding-top: 95px;
-  background-color: var(--Dark-color2);
+
   display: flex;
   justify-content: center;
   text-align: center;
