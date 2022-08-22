@@ -103,10 +103,10 @@ img {
 .buttons a {
   width: 114px;
   height: 46px;
+  margin: 10px;
   padding: 10px 24px;
   border-radius: 8px;
   border: none;
-  margin-left: 32px;
   color: var(--White);
   border: 2px solid var(--Primary-colour);
 }
