@@ -101,6 +101,7 @@ img {
 }
 
 p {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 1.19rem;
@@ -247,7 +248,7 @@ input {
   padding: 15px;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0px 5px 20px var(--Dark-colour);
+  box-shadow: 0px 5px 20px var(--Low-priority);
 
   border: none;
 }
@@ -266,10 +267,9 @@ input {
 }
 
 .form-contact span button:hover {
-
   background-color: var(--Secondary-colour);
   color: var(--White);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 input::placeholder,
@@ -281,7 +281,8 @@ textarea::placeholder {
 
 label textarea:hover,
 input:hover {
-  box-shadow: 0px 5px 30px var(--Secondary-colour);
+  box-shadow: 0px 5px 30px var(--Low-priority);
+  transition: .3s;
 }
 
 textarea,
@@ -294,12 +295,11 @@ input:focus-within {
   border: none;
 }
 
-
 footer {
   margin-top: 150px;
-  background-color: #09006b31;
+  background-color: #0f057825;
   padding-top: 30px;
-  height: 250px;
+  height: 390px;
 }
 
 footer i {
@@ -312,13 +312,11 @@ footer i {
   font-size: 1.2rem;
 }
 
-.info p{
-  font-weight: 500;
-}
-
 footer p {
- font-size: 1.2rem;
- text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: left;
+
 }
 
 .social-links ul {
@@ -327,7 +325,7 @@ footer p {
   display: flex;
 }
 
-.social-links span p{
+.social-links span p {
   margin-top: 20px;
   margin-bottom: 5px;
 }
@@ -336,10 +334,22 @@ footer p {
   color: #171515;
 }
 
+.fa-square-instagram {
+  color: #e600ad;
+}
+
+.fa-envelope {
+  color: #202020;
+}
+
 .fa-linkedin {
   color: #0e76a8;
 }
 
-.repositories h3 {
-  font-size: 1.12rem;
+.social-links span a {
+  color: var(--Black-colour);
+}
+
+.social-links span a:hover {
+  text-decoration: underline;
 }
