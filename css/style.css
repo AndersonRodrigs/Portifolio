@@ -59,6 +59,7 @@ nav .container {
   padding-bottom: 5px;
   top: 0;
   z-index: 100;
+  filter: blur(0.2px);
   color: var(--Low-priority);
   background-color: var(--White);
 }
@@ -86,7 +87,7 @@ nav .container {
 #home .image img {
   text-align: center;
   width: 100%;
-  filter: drop-shadow(23px -20px 2px var(--Dark-colour));
+  filter: drop-shadow(10px -10px 0px var(--Dark-colour));
   max-width: 250px;
   width: 100%;
   border-radius: 0px 0px 0px 60px;
@@ -208,7 +209,8 @@ p {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  max-width: 294px;
+  width: 100%;
+  max-width: 400px;
   padding: 10px;
   height: 380px;
   border-radius: 10px;
@@ -315,14 +317,14 @@ footer p {
   margin-bottom: 20px;
 }
 
-
-footer ul li a img{
-  width: 30px;
+svg{
+  width: 40px;
+  height: 33px;
 }
 
 .social-links ul {
   margin-top: 5px;
-  gap: 25px;
+  gap: 10px;
   display: flex;
 }
 
