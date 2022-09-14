@@ -8,6 +8,7 @@
   --White: #fff;
   --Black-colour: #000000;
   --Low-priority: #383838;
+  --white-c: #f0f0f0;
   --Secondary-colour: #2000e7;
   --Dark-colour: #0e0578;
 }
@@ -35,7 +36,6 @@ body {
   text-align: center;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -61,7 +61,8 @@ nav .container {
   z-index: 100;
   filter: blur(0.2px);
   color: var(--Low-priority);
-  background-color: var(--White);
+  background-color: var(--white-c);
+  box-shadow: 0 0 20px -11px var(--Low-priority);
 }
 
 .logo h2 {
@@ -134,7 +135,8 @@ p {
   margin-top: 40px;
 }
 
-.buttons a, .form-contact span button  {
+.buttons a,
+.form-contact span button {
   font-size: 1.1rem;
   text-align: center;
   width: 114px;
@@ -149,7 +151,8 @@ p {
   transition: 0.3s;
 }
 
-.buttons a:hover,.form-contact span button:hover  {
+.buttons a:hover,
+.form-contact span button:hover {
   color: var(--White);
   background-color: var(--Secondary-colour);
   box-shadow: 0 0 15px 1px var(--Low-priority);
@@ -160,7 +163,9 @@ p {
 }
 
 #skils {
+  background-color: var(--white-c);
   width: 100%;
+  padding: 50px 0px;
   margin-bottom: 150px;
 }
 
@@ -181,8 +186,12 @@ p {
   text-align: center;
 }
 
+#skils h2 {
+  text-align: center;
+}
+
 .skils-img span img {
-  width: 94px;
+  width: 84px;
   transition: 0.2s;
 }
 
@@ -191,7 +200,9 @@ p {
 }
 
 #projects {
+  background-color: var(--white-c);
   width: 100%;
+  padding: 50px 0px;
   margin-bottom: 150px;
 }
 
@@ -216,6 +227,7 @@ p {
   border-radius: 10px;
   transition: 0.3s;
   margin-bottom: 20px;
+  background-color: var(--White);
   box-shadow: 0px 0px 10px 0px var(--Low-priority);
 }
 
@@ -254,7 +266,7 @@ p {
   flex-direction: column;
 }
 
-.form-contact form textarea{
+.form-contact form textarea {
   margin-bottom: 18px;
 }
 
@@ -270,7 +282,6 @@ input {
   border: none;
 }
 
-
 .form-contact span button:hover {
   background-color: var(--Secondary-colour);
   color: var(--White);
@@ -280,7 +291,7 @@ input::placeholder,
 textarea::placeholder {
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 label textarea:hover,
@@ -311,13 +322,12 @@ footer p {
   text-align: left;
 }
 
-
 .info {
   text-align: left;
   margin-bottom: 20px;
 }
 
-svg{
+svg {
   width: 40px;
   height: 33px;
 }
@@ -334,15 +344,14 @@ svg{
 }
 
 .rights ul {
- display: flex;
- gap: 0;
- flex-direction: column;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
 }
 
 .rights ul li {
   text-align: left;
 }
-
 
 .social-links span a {
   color: var(--Black-colour);
@@ -350,4 +359,11 @@ svg{
 
 .social-links span a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+   .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
 }
