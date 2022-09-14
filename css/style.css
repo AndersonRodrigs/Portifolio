@@ -31,8 +31,8 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 6%;
+  padding-right: 6%;
   text-align: center;
 }
 
@@ -110,10 +110,10 @@ nav .container {
   color: var(--Dark-colour);
 }
 
-#about h2,
 #skils h2,
 #projects h2,
 #contact h2 {
+  text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 1.56rem;
@@ -132,7 +132,7 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .buttons a,
@@ -158,10 +158,6 @@ p {
   box-shadow: 0 0 15px 1px var(--Low-priority);
 }
 
-#about {
-  margin-bottom: 150px;
-}
-
 #skils {
   background-color: var(--white-c);
   width: 100%;
@@ -170,7 +166,8 @@ p {
 }
 
 .content-img img {
-  width: 250px;
+  width: 100%;
+  max-width: 419px;
 }
 
 .skils-img {
@@ -180,17 +177,17 @@ p {
   flex-wrap: wrap;
 }
 
-#skils span {
-  margin: 40px;
-  width: 100px;
+.skils-img li p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#skils ul {
   text-align: center;
 }
 
-#skils h2 {
-  text-align: center;
-}
-
-.skils-img span img {
+.skils-img li img {
   width: 84px;
   transition: 0.2s;
 }
@@ -207,11 +204,10 @@ p {
 }
 
 .cards {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
+ justify-content: center;
+ flex-direction: column;
 }
 
 .card {
@@ -362,8 +358,58 @@ svg {
 }
 
 @media screen and (min-width: 800px) {
-   .container {
+  .image {
+    grid-area: img;
+  }
+  .information {
+    grid-area: info;
+  }
+  
+
+  .container * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   }
+    grid-template-areas: 'info img';
+  }
+
+  .information span {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .buttons a {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .buttons {
+    height: 60px;
+    margin-top: 30px;
+    justify-content: left;
+  }
+
+  .content-img img {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skils-img {
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
