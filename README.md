@@ -6,7 +6,7 @@
 
 Portifólio pessoal (em desenvolvimento). 
 
-[🔗 Clique aqui para acessar](https://AndersonRodrigs.github.io/NLW-eSports-Explorer-Desafio-Extra/)
+[🔗 Clique aqui para acessar]()
 
 ## 🛠 Tecnologias:
 <div>
