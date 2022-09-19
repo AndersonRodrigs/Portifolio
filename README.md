@@ -17,7 +17,6 @@ Portifólio pessoal (em desenvolvimento).
 ### Lib.js: [ScrollReveal](https://scrollrevealjs.org/)
 </div>
 
-##
 
 <!--# Autor:-->
 ## Contato
