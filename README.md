@@ -6,7 +6,7 @@
 
 Portifólio pessoal (em desenvolvimento). 
 
-[🔗 Clique aqui para acessar]()
+<!-- [🔗 Clique aqui para acessar]() -->
 
 ## 🛠 Tecnologias:
 <div>
@@ -18,7 +18,6 @@ Portifólio pessoal (em desenvolvimento).
 </div>
 
 ##
-
 
 <!--# Autor:-->
 ## Contato
