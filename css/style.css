@@ -31,8 +31,7 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding: 0 4%;
   text-align: center;
 }
 
@@ -55,7 +54,7 @@ nav .container {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 5px;
   top: 0;
   z-index: 100;
@@ -111,6 +110,7 @@ nav .container {
 }
 
 #skils h2,
+#about h2,
 #projects h2,
 #contact h2 {
   text-align: center;
@@ -140,9 +140,8 @@ p {
   font-size: 1.1rem;
   text-align: center;
   width: 114px;
-  height: 46px;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 5px ;
   border-radius: 4px;
   border: none;
   font-size: 1.12rem;
@@ -154,11 +153,18 @@ p {
 .buttons a:hover,
 .form-contact span button:hover {
   color: var(--White);
+  box-shadow: 2px -2px 0px var(--Secondary-colour);
   background-color: var(--Secondary-colour);
-  box-shadow: 0 0 15px 1px var(--Low-priority);
 }
 
-#skils {
+#about {
+  width: 100%;
+  padding: 50px 0px;
+  margin-bottom: 150px;
+}
+
+#skils,
+#projects {
   background-color: var(--white-c);
   width: 100%;
   padding: 50px 0px;
@@ -168,6 +174,17 @@ p {
 .content-img img {
   width: 100%;
   max-width: 419px;
+}
+
+#skils ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skils-img li {
+  width: 100px;
+  margin: 25px;
 }
 
 .skils-img {
@@ -183,12 +200,8 @@ p {
   justify-content: center;
 }
 
-#skils ul {
-  text-align: center;
-}
-
 .skils-img li img {
-  width: 84px;
+  width: 74px;
   transition: 0.2s;
 }
 
@@ -196,30 +209,22 @@ p {
   filter: drop-shadow(0 0 4px var(--Low-priority));
 }
 
-#projects {
-  background-color: var(--white-c);
-  width: 100%;
-  padding: 50px 0px;
-  margin-bottom: 150px;
-}
-
 .cards {
   width: 100%;
   display: flex;
- justify-content: center;
- flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card {
   margin: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 374px;
   padding: 10px;
-  height: 380px;
   border-radius: 10px;
   transition: 0.3s;
   margin-bottom: 20px;
@@ -227,27 +232,36 @@ p {
   box-shadow: 0px 0px 10px 0px var(--Low-priority);
 }
 
+.link-projects {
+  margin: 20px;
+  width: 100%;
+}
+
 .card:hover {
   box-shadow: 0px 5px 10px 0px var(--Low-priority);
   transform: scale(1.01);
 }
 
-.text-card {
-  width: 100%;
-}
-
 .card img {
   width: 100%;
   border-radius: 10px;
-  font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
-.card span a {
+.card span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#projects a {
   color: var(--Dark-colour);
   transition: 0.3s;
+  font-size: 1.01rem;
+  font-weight: 600;
 }
 
-.card a:hover {
+#projects a:hover {
   text-decoration: underline;
   color: var(--Secondary-colour);
 }
@@ -309,7 +323,7 @@ footer {
   margin-top: 150px;
   background-color: #0000003d;
   padding-top: 30px;
-  height: 390px;
+  padding-bottom: 50px;
 }
 
 footer p {
@@ -328,14 +342,22 @@ svg {
   height: 33px;
 }
 
-.social-links ul {
+.repository ul {
   margin-top: 5px;
-  gap: 10px;
   display: flex;
 }
 
-.social-links span p {
-  margin-top: 20px;
+.links {
+  margin-top: 10px;
+}
+
+.links ul {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.repository span p {
   margin-bottom: 5px;
 }
 
@@ -349,32 +371,35 @@ svg {
   text-align: left;
 }
 
-.social-links span a {
+.repository a {
   color: var(--Black-colour);
 }
 
-.social-links span a:hover {
+.repository span a:hover {
   text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
-  .image {
-    grid-area: img;
+  .column-a {
+    grid-area: A;
   }
-  .information {
-    grid-area: info;
-  }
-  
-
-  .container * {
-    margin: 0;
-    padding: 0;
+  .column-b {
+    grid-area: B;
   }
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'info img';
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-areas: 'B A';
+  }
+
+  #about h2 {
+    text-align: left;
+  }
+
+  #about p {
+    width: 60%;
+    text-align: left;
   }
 
   .information span {
@@ -389,7 +414,6 @@ svg {
   }
 
   .buttons {
-    height: 60px;
     margin-top: 30px;
     justify-content: left;
   }
@@ -409,7 +433,36 @@ svg {
 
   .cards {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+
+  .card {
+    display: flex;
+    width: 381px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
+
+  .repository {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rights ul {
+    align-items: center;
   }
 }
