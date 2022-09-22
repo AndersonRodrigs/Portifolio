@@ -47,33 +47,46 @@ button {
   cursor: pointer;
 }
 
-nav .container {
+nav {
+  height: 70px;
+  padding: 0 4%;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
   position: fixed;
   width: 100%;
-  padding-top: 6px;
-  padding-bottom: 5px;
-  top: 0;
-  z-index: 100;
-  filter: blur(0.2px);
-  color: var(--Low-priority);
-  background-color: var(--white-c);
-  box-shadow: 0 0 20px -11px var(--Low-priority);
+  z-index: 20;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--Dark-colour);
+  box-shadow: 0px 0px 8px;
 }
 
-.logo h2 {
+#menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+#menu a:hover {
+  background-color: var(--Secondary-colour);
+  border-radius: 4px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.logo {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 72px;
   color: var(--Dark-colour);
-}
-
-.menu-mobile i {
-  font-size: 2rem;
 }
 
 #home {
@@ -101,12 +114,16 @@ nav .container {
   color: var(--Dark-colour);
 }
 
-.information h3 {
+.information h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 47px;
   color: var(--Dark-colour);
+}
+
+.information p {
+  font-size: 1.3rem;
 }
 
 #skils h2,
@@ -124,8 +141,9 @@ nav .container {
 
 p {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.12rem;
+
   color: var(--Black-colour);
 }
 
@@ -137,30 +155,34 @@ p {
 
 .buttons a,
 .form-contact span button {
-  font-size: 1.1rem;
   text-align: center;
   width: 114px;
   margin: 10px;
-  padding: 5px ;
+  padding: 5px;
   border-radius: 4px;
   border: none;
   font-size: 1.12rem;
-  color: var(--White);
-  background-color: var(--Dark-colour);
+  color: var(--Dark-colour);
+  font-weight: 500;
+  border: 2px solid var(--Dark-colour);
   transition: 0.3s;
 }
 
 .buttons a:hover,
 .form-contact span button:hover {
   color: var(--White);
-  box-shadow: 2px -2px 0px var(--Secondary-colour);
-  background-color: var(--Secondary-colour);
+  background-color: var(--Dark-colour);
 }
 
 #about {
   width: 100%;
   padding: 50px 0px;
   margin-bottom: 150px;
+}
+
+#about p {
+  font-size: 1.12rem;
+  font-weight: 500;
 }
 
 #skils,
@@ -223,7 +245,7 @@ p {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  max-width: 374px;
+  max-width: 370px;
   padding: 10px;
   border-radius: 10px;
   transition: 0.3s;
@@ -379,6 +401,77 @@ svg {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 800px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: var(--Dark-colour);
+    height: 0px;
+    transition: 0.6s all;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0.2rem 1rem;
+    border-bottom: 2px solid rgba(0, 204, 255, 0.055);
+  }
+
+  #btn-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    color: white;
+    display: block;
+    height: 3px;
+    border-radius: 2px;
+    width: 26px;
+    background: currentColor;
+
+  }
+
+  #hamburger:nth-child(2),
+  #hamburger:nth-child(3) {
+    display: block;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger:nth-child(1) {
+    color: transparent;
+  }
+
+  #nav.active #hamburger:nth-child(2) {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger:nth-child(3) {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -9.05px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .column-a {
     grid-area: A;
@@ -437,7 +530,6 @@ svg {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
 
   .card {
     display: flex;
