@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script
-      src="https://kit.fontawesome.com/beb24498dc.js"
+      src="https://kit.fontawesome.com/887ffa7632.js"
       crossorigin="anonymous"
     ></script>
 
+    <link rel="stylesheet" href="./src/css/scrollBar.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Portifolio</title>
   </head>
   <body>
     <nav>
-      <h1 id="logo">Logo</h1>
+      <h1 class="logo">Anderson</h1>
       <div id="nav">
         <button id="btn-mobile">
           <span id="hamburger"></span>
@@ -29,7 +33,7 @@
         <div id="menu">
           <ul class="menu-toggle">
             <li>
-              <a href="#home" onclick="closeMenu()">Home</a>
+              <a href="#home" onclick="closeMenu()">Inicio</a>
             </li>
             <li>
               <a href="#about" onclick="closeMenu()">Sobre</a>
@@ -46,57 +50,25 @@
           </ul>
           <ul class="social-links active-links">
             <li>
-              <a href=""><svg viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#0)"/><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#1)"/><path d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57" fill="#fff"/></svg></a>
+              <a
+                href="https://www.instagram.com/anderson.souza.r"
+                target="_blank"
+              >
+                <img src="./public/instagran.svg" alt="logo-istagran" />
+              </a>
             </li>
             <li>
-              <a href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
-             <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
-               C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
-               H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
-               c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
-               s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
-               c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
-               c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
-               c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
-               L341.91,330.654L341.91,330.654z"/>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             </svg>
-             </a>
+              <a
+                href="https://www.linkedin.com/in/anderson-rodrigues-s"
+                target="_blank"
+              >
+                <img src="./public/linkedinW.svg" alt="logo-linkedin" />
+              </a>
             </li>
             <li>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+              <a href="https://github.com/AndersonRodrigs" target="_blank">
+                <img src="./public/gitHubW.svg" alt="logo-github" />
+              </a>
             </li>
           </ul>
         </div>
@@ -118,8 +90,8 @@
             <p>Desenvolvedor Front-End</p>
           </span>
           <div class="buttons">
-            <a href="#" class="button">Contato</a>
-            <a href="#" class="button">Projetos</a>
+            <a href="#contact" class="button">Contato</a>
+            <a href="#projects" class="button">Projetos</a>
           </div>
         </div>
       </div>
@@ -129,7 +101,23 @@
       <div class="container">
         <div class="about-text column-a">
           <h2>Sobre mim</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, perferendis commodi dolore voluptate quos ullam, quisquam maiores id neque in pariatur deserunt quae consectetur assumenda, fugiat nam. Distinctio, harum voluptas!</p>
+          <p>
+            Entusiasta em tecnologia entrei na área de no começo desse ano de
+            forma autodidata. Atualmente estou com o objetivo de me tornar um
+            desenvolvedor front-end onde todo dia estudo conteúdos que possam me
+            ajudar a evoluir meus conhecimentos sobre a área. Procuro sempre ser
+            focado em tudo que faço, realizando com a maior qualidade possível.
+            Atualmente a experiência que possuo vem de projetos em que
+            participei com pessoas da comunidade de Devs, e projetos meus que
+            construí que você pode ver aqui mesmo na seção Meus Projetos.
+            <a
+              href="./assets/Anderson_Rodrigues.pdf"
+              download
+              class="button"
+              target="_blank"
+              >Baixar CV <i class="fa-sharp fa-solid fa-download"></i
+            ></a>
+          </p>
         </div>
       </div>
     </section>
@@ -140,20 +128,35 @@
           <header>
             <h2>Habilidades</h2>
           </header>
-          <img src="./assets/skils.png" alt="">
+          <img
+            src="./public/image-section-skils.svg"
+            alt="imagen-da-seção-habilidades"
+          />
         </div>
         <ul class="skils-img column-a">
           <li>
-            <img src="./assets/html-5 (1).png" alt="">
+            <img src="./public/logo-html.svg" alt="html logo" />
             <p>HTML</p>
           </li>
           <li>
-            <img src="./assets/html-5 (1).png" alt="">
-            <p>HTML</p>
+            <img src="./public/logo-css.svg" alt="css logo" />
+            <p>CSS</p>
           </li>
           <li>
-            <img src="./assets/html-5 (1).png" alt="">
-            <p>HTML</p>
+            <img src="./public/logo-js.svg" alt="javascript logo" />
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img src="./public/logo-jQuery.svg" alt="jQuery logo" />
+            <p>jQuery</p>
+          </li>
+          <li>
+            <img src="./public/logo-git.svg" alt="git logo" />
+            <p>Git</p>
+          </li>
+          <li>
+            <img src="./public/logo-gitHub.svg" alt="git logo" />
+            <p>Git</p>
           </li>
         </ul>
       </div>
@@ -167,68 +170,146 @@
           </header>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://user-images.githubusercontent.com/105132452/198434264-50eb15c0-ce58-447d-ad8e-c0f57b7a9366.png"
+              alt="Projeto-imagen"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/21-Dias-de-Codigo/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/21-Dias-de-Codigo"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://user-images.githubusercontent.com/105132452/198699660-09216962-8476-40ab-b5ed-3f6d471d2394.png"
+              alt="Projeto-imagen"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/Emoji-picker/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/Emoji-picker"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://user-images.githubusercontent.com/105132452/190727778-e14de3ca-d3fd-4ff1-b8ec-8cfb5ce54c88.png"
+              alt="Projeto-imagen"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/NLW-eSports-Explorer-Desafio-Extra/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/NLW-eSports-Explorer-Desafio-Extra"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://user-images.githubusercontent.com/105132452/199333762-af3e5b6d-f390-40c4-8178-69822bff158a.png"
+            />
+            <span class="links-projects">
+              <a href="http://rocketpay-inky.vercel.app/" target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/Explorer-Lab-01-RocketPay"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-              <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://user-images.githubusercontent.com/105132452/194731231-999bc0e1-f548-42db-913d-6785f5d70298.png"
+              alt="Projeto-imagen"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/Calculadora-De-Medias/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/Calculadora-De-Medias"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
 
           <div class="card">
-              <img src="./assets/capture.png" alt="">
-            <span>
-              <a href=""><i class="fa-solid fa-eye"></i>Ver projeto</a>
-          <a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a>
+            <img
+              src="https://github.com/AndersonRodrigs/Pokedex/raw/main/img/Captura%20de%20Tela%20(59).png"
+              alt="Projeto-imagen"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/Pokedex/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/Pokedex"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
             </span>
           </div>
+
+          <div class="card">
+            <img
+              src="https://github.com/AndersonRodrigs/Gerenciador-de-Terefas/raw/main/img/TelaDoProjeto-GerenciadorDeTarefas.png"
+            />
+            <span class="links-projects">
+              <a
+                href="https://andersonrodrigs.github.io/Gerenciador-de-Terefas/"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i>Ver projeto</a
+              >
+              <a
+                href="https://github.com/AndersonRodrigs/Gerenciador-de-Terefas"
+                target="_blank"
+              >
+                <img src="./public/logo-gitHub.svg" alt="gitHub-logo" />
+              </a>
+            </span>
+          </div>
+
           <span class="link-projects">
             <a href="">Ver todos os projetos</a>
           </span>
         </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -237,170 +318,103 @@
           <header>
             <h2>Entre em Contato</h2>
           </header>
-          <img src="./assets/contact-me.png" alt="">
+          <img
+            src="./public/image-section-contact.svg"
+            alt="imagen-da-seção-contato"
+          />
         </div>
         <div class="form-contact column-a">
-          
           <form
-          target="_blank"
+            target="_blank"
             action="https://formspree.io/f/mknydapw"
-            method="POST">
+            method="POST"
+          >
             <label>
-              <input type="email" name="nome" placeholder="Seu nome">
+              <input type="text" name="nome" placeholder="Seu nome" />
             </label>
             <label>
-              <input type="email" name="email" placeholder="Seu email">
+              <input type="email" name="email" placeholder="Seu email" />
             </label>
             <label>
               <textarea name="message" placeholder="Sua mensagem"></textarea>
             </label>
-            <!-- your other form fields go here -->
             <span>
               <button type="submit" class="button">Enviar</button>
             </span>
           </form>
-
         </div>
       </div>
     </section>
 
     <footer>
       <div class="container">
-
         <div class="info column-b">
           <ul>
             <li>
-              <p>@2022 Anderson Rodrigues</p>
+              <p>©2022 Anderson Rodrigues</p>
             </li>
             <li>
-              <p> Desenvolvedor Front-End</p>
+              <p>Desenvolvedor Front-End</p>
             </li>
           </ul>
           <div class="links">
             <p>Redes sociais:</p>
             <ul>
-            <li>
-              <a href=""><svg viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#0)"/><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#1)"/><path d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57" fill="#fff"/></svg></a>
-            </li>
-            <li>
-              <a href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 382 382" style="enable-background:new 0 0 382 382;" xml:space="preserve">
-             <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
-               C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
-               H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
-               c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
-               s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
-               c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
-               c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
-               c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
-               L341.91,330.654L341.91,330.654z"/>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             </svg>
-             </a>
-            </li>
-            <li>
-              <a href=""><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-             <path style="fill:#E6F3FF;" d="M512,105.739v300.522c0,27.715-22.372,50.087-50.087,50.087H50.087
-               C22.372,456.348,0,433.976,0,406.261V105.739c0-0.89,0-1.781,0.111-2.671c1.336-25.6,21.704-45.969,47.304-47.304
-               c0.89-0.111,1.781-0.111,2.671-0.111h411.826c0.89,0,1.892,0,2.783,0.111c25.489,1.336,45.857,21.704,47.193,47.193
-               C512,103.847,512,104.849,512,105.739z"/>
-             <path style="fill:#CFDBE6;" d="M464.696,55.763c-0.892-0.111-1.891-0.111-2.783-0.111H256v400.696h205.913
-               c27.715,0,50.087-22.372,50.087-50.087V105.739c0-0.89,0-1.892-0.111-2.783C510.553,77.468,490.184,57.099,464.696,55.763z"/>
-             <path style="fill:#FF4B26;" d="M511.889,102.957c-1.336-25.489-21.704-45.857-47.193-47.193
-               C382.89,137.569,336.951,183.509,256,264.459C225.291,233.732,77.61,85.958,47.416,55.763c-25.6,1.336-45.969,21.704-47.304,47.304
-               C0,103.958,0,104.849,0,105.739v300.522c0,27.715,22.372,50.087,50.087,50.087h16.696V169.739l165.621,165.51
-               c6.456,6.567,15.026,9.795,23.597,9.795c8.57,0,17.141-3.228,23.597-9.795l165.621-165.621v286.72h16.696
-               c27.715,0,50.087-22.372,50.087-50.087V105.739C512,104.849,512,103.847,511.889,102.957z"/>
-             <path style="fill:#D93F21;" d="M279.596,335.249l165.621-165.621v286.72h16.696c27.715,0,50.087-22.372,50.087-50.087V105.739
-               c0-0.89,0-1.892-0.111-2.783c-1.336-25.489-21.704-45.857-47.193-47.193C382.891,137.569,336.951,183.509,256,264.459v80.584
-               C264.57,345.043,273.141,341.816,279.596,335.249z"/>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             <g>
-             </g>
-             </svg>
-             </a>
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/anderson.souza.r"
+                  target="_blank"
+                >
+                  <img src="./public/instagran.svg" alt="logo-istagran" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anderson-rodrigues-s"
+                  target="_blank"
+                >
+                  <img src="./public/linkedinW.svg" alt="logo-linkedin" />
+                </a>
+              </li>
+            </ul>
           </div>
-         
         </div>
 
         <div class="repository column-a">
-            <p>GitHub:</p>
-            <ul>
-              <li><a href=""><svg width="64px" height="64px" viewBox="0 0 64 64" id="i-github" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
-            </svg></a></li>
-            </ul>
+          <p>GitHub:</p>
+          <ul>
+            <li>
+              <a href="https://github.com/AndersonRodrigs" target="_blank">
+                <img src="./public/gitHubW.svg" alt="logo-github" />
+              </a>
+            </li>
+          </ul>
           <span class="rights">
             <ul>
               <li>
                 <p>Icones:</p>
               </li>
-              <li><a href="https://fontawesome.com/" target="_blank">Fontawesome</a></li>
-              <li><a href="https://www.flaticon.com/">Flaticon</a></li>
+              <li>
+                <a href="https://fontawesome.com/" target="_blank">
+                  Fontawesome
+                </a>
+              </li>
+              <li><a href="https://www.flaticon.com/"> Flaticon</a></li>
             </ul>
           </span>
         </div>
       </div>
     </footer>
+
+    <a href="#home" class="button-back-to-top hide">
+      <img src="./public/upArrow.svg" alt="seta-voltar-ao-topo" />
+    </a>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./src/js/script.js"></script>
   </body>
