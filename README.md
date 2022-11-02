@@ -1,10 +1,10 @@
 # Portifolio 
 
-<img src="https://github.com/othneildrew/Best-README-Template/raw/master/images/screenshot.png">
+![image](https://user-images.githubusercontent.com/105132452/199593413-2faee4ae-fc59-4c64-9397-d92758562099.png)
 
 ## Sobre o projeto:
 
-Portifólio pessoal (em desenvolvimento). 
+Portifólio pessoal. 
 
 <!-- [🔗 Clique aqui para acessar]() -->
 
