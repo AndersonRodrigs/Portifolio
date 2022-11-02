@@ -5,12 +5,12 @@
 }
 
 :root {
-  --White: #fff;
+  --White: #dfdfdf;
   --Black-colour: #000000;
-  --Low-priority: #383838;
+  --Low-priority: #848775;
   --white-c: #f0f0f0;
-  --Secondary-colour: #2000e7;
-  --Dark-colour: #0e0578;
+  --Secondary-colour: #132b81;
+  --Dark-colour: #000036;
 }
 
 html,
@@ -57,28 +57,36 @@ section header {
   visibility: hidden;
 }
 
+/* ============ NAVIGATION ============ */
+
 nav {
-  height: 70px;
-  padding: 0 4%;
   display: flex;
   position: fixed;
-  width: 100%;
-  z-index: 20;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+
+  padding: 0 4%;
+  z-index: 20;
+
   color: white;
   background-color: var(--Dark-colour);
-  box-shadow: 0px 0px 8px;
+  box-shadow: 0px 0px 8px var(--Low-priority);
 }
 
-.menu-toggle li::after {
+#menu li::after {
   content: "";
   display: block;
   position: relative;
-  background-color: #f0f0f0;
+
   width: 0%;
   height: 2px;
-  transition: all 0.3s ease-in-out;
+
+  background-color: #f0f0f0;
+
+  transition: all 0.2s ease-in-out;
 }
 
 #menu li:hover::after {
@@ -104,12 +112,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 60px;
   gap: 30px;
 }
 
 .social-links li a img {
   width: 35px;
+  transition: 0.2s;
 }
 
 .social-links li a img:hover {
@@ -117,32 +127,42 @@ nav {
 }
 
 .logo {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(1.5rem, 3vw, 1.8rem);
+
   line-height: 72px;
+
   color: var(--white-c);
 }
 
+/* ==================================== */
+
+/* ============ HOME ============ */
+
 #home {
-  padding-top: 150px;
   display: flex;
   justify-content: center;
+
   width: 100%;
+
+  padding-top: 150px;
 }
 
 #home .image img {
-  text-align: center;
   width: 100%;
-  filter: drop-shadow(10px -10px 0px var(--Dark-colour));
   max-width: 250px;
+  text-align: center;
+
   border-radius: 8px;
+  filter: drop-shadow(10px -10px 0px var(--Dark-colour));
 }
 
 .information h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
+
   line-height: 47px;
   color: var(--Dark-colour);
 }
@@ -151,6 +171,7 @@ nav {
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
+
   line-height: 47px;
   color: var(--Dark-colour);
 }
@@ -163,12 +184,14 @@ nav {
 #about h2,
 #projects h2,
 #contact h2 {
-  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.56rem;
+
+  text-align: center;
   line-height: 37px;
   margin-bottom: 18px;
+
   color: var(--Dark-colour);
 }
 
@@ -183,22 +206,28 @@ p {
 .buttons {
   display: flex;
   justify-content: center;
+
   margin-top: 20px;
   gap: 20px;
 }
 
 .button {
-  text-align: center;
+  width: fit-content;
   margin-top: 15px;
   padding: 5px 18px;
+
   border-radius: 4px;
   border: none;
-  font-size: 1.1rem;
-  color: var(--Dark-colour);
+
+  text-align: center;
   font-weight: 500;
-  border: 2px solid var(--Dark-colour);
+  font-size: 1.1rem;
+
+  color: var(--Dark-colour);
   background-color: var(--White);
-  transition: 0.3s;
+  border: 2px solid var(--Dark-colour);
+
+  transition: 0.2s;
 }
 
 .button:hover {
@@ -206,18 +235,33 @@ p {
   background-color: var(--Dark-colour);
 }
 
+/* ==================================== */
+
+/* ============ ABOUT ============ */
+
 #about {
   width: 100%;
   padding-top: 150px;
 }
 
-.about-text p {
+.about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about-text p {
   font-size: 1.12rem;
   font-weight: 500;
 }
+
+.about-text p a {
+  color: var(--Dark-colour);
+}
+
+/* ==================================== */
+
+/* ============ SKILS ============ */
 
 #skils,
 #projects {
@@ -226,9 +270,10 @@ p {
 
 #skils .container,
 #projects .container {
-  background-color: var(--white-c);
   width: 100%;
   padding: 20px 0;
+
+  background-color: var(--white-c);
 }
 
 .content-img img {
@@ -242,55 +287,75 @@ p {
   justify-content: center;
 }
 
-.skils-img li {
+.skils-svg li {
   width: 100px;
   margin: 25px;
+  transition: all 0.2s ease-in-out;
 }
 
-.skils-img {
+.skils-svg {
   display: flex;
   align-items: center;
+
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.skils-img li p {
+.skils-svg li p {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.skils-img li img {
-  width: 64px;
-  transition: 0.2s;
+.skils-svg li svg path {
+  fill: var(--Dark-colour);
 }
 
-.skils-img img:hover {
+.skils-svg li svg {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+
+.skils-svg li svg:hover {
   filter: drop-shadow(0 0 6px var(--Secondary-colour));
 }
 
+.skils-svg li:hover {
+  transform: translateY(-10px);
+}
+
+/* ==================================== */
+
+/* ============ PROJECTS ============ */
+
 .cards {
   width: 100%;
+
   display: flex;
-  padding-inline:20px ;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+
+  padding-inline: 20px;
 }
 
 .cards .card {
-  width: 100%;
-  max-width: 400px;
-  margin: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 15px;
-  border-radius: 10px;
-  transition: 0.3s;
+
+  max-width: 400px;
+  height: 310px;
+
+  margin: 15px;
   margin-bottom: 20px;
-  background-color: var(--White);
-  box-shadow: 0px 0px 10px 0px var(--Dark-colour);
+  padding: 15px;
+
+  border-radius: 10px;
+  background-color: var(--Dark-colour);
+
+  transition: 0.2s;
 }
 
 .link-projects {
@@ -301,11 +366,13 @@ p {
 .link-projects a {
   font-size: 1.1rem;
   font-weight: 600;
+
   color: var(--Dark-colour);
 }
 
 .link-projects a:hover {
   text-decoration: underline;
+
   color: var(--Secondary-colour);
 }
 
@@ -320,8 +387,9 @@ p {
 }
 
 .links-projects img {
-  margin: 0;
   width: 35px;
+  margin: 0;
+
   transition: filter 0.2s;
 }
 
@@ -336,19 +404,27 @@ p {
 }
 
 .links-projects a {
-  color: var(--Dark-colour);
   display: flex;
-  padding: 2px;
   align-items: center;
-  transition: 0.3s;
+  padding: 2px;
+
   font-size: 1.01rem;
   font-weight: 600;
+
+  color: var(--White);
+
+  transition: 0.2s;
 }
 
+.about-text p a:hover,
 .card a:hover {
   text-decoration: underline;
-  color: var(--Secondary-colour);
+  color: var(--white-c);
 }
+
+/* ==================================== */
+
+/* ============ CONTACT ============ */
 
 #contact {
   padding-top: 150px;
@@ -365,17 +441,21 @@ p {
 }
 
 .form-contact span button {
-  text-align: center;
   margin-top: 10px;
   padding: 6px 35px;
+
   border-radius: 4px;
   border: none;
+
+  text-align: center;
   font-size: 1.1rem;
-  color: var(--Dark-colour);
   font-weight: 500;
+
   border: 2px solid var(--Dark-colour);
   background-color: var(--White);
-  transition: 0.3s;
+  color: var(--Dark-colour);
+
+  transition: 0.2s;
 }
 
 .form-contact form textarea {
@@ -387,13 +467,15 @@ input {
   width: 100%;
   padding: 15px;
   margin-top: 30px;
-  border-radius: 8px;
-  background-color: var(--white-c);
-  box-shadow: 0px 5px 20px var(--Low-priority);
-  transition: 0.3s;
-  font-size: 1rem;
 
+  border-radius: 8px;
+  font-size: 1rem;
   border: none;
+
+  box-shadow: 0px 5px 20px var(--Low-priority);
+  background-color: var(--white-c);
+
+  transition: 0.2s;
 }
 
 input::placeholder,
@@ -413,22 +495,30 @@ input:focus {
   outline: none;
 }
 
+/* ============ NAVIGATION ============ */
+
+/* ============ FOOTER ============ */
+
 footer {
   margin-top: 150px;
-  background-color: var(--Low-priority);
+
   padding-top: 30px;
   padding-bottom: 50px;
+
+  background-color: var(--Black-colour);
 }
 
 footer p {
   font-weight: 400;
   font-size: 1.12rem;
   text-align: left;
+
   color: var(--white-c);
 }
 
 footer img {
   width: 30px;
+  transition: 0.2s;
 }
 
 footer img:hover {
@@ -450,9 +540,9 @@ footer img:hover {
 }
 
 .links ul {
-  gap: 10px;
   display: flex;
   margin-top: 10px;
+  gap: 10px;
 }
 
 .repository span p {
@@ -461,8 +551,8 @@ footer img:hover {
 
 .rights ul {
   display: flex;
-  gap: 0;
   flex-direction: column;
+  gap: 0;
 }
 
 .rights ul li {
@@ -477,34 +567,49 @@ footer img:hover {
   text-decoration: underline;
 }
 
+/* ==================================== */
+
+/* ============ BTN BACK TO TOP ============ */
+
 .button-back-to-top {
   display: flex;
+  padding: 8px;
+
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: var(--Dark-colour);
-  padding: 8px;
+
   border-radius: 8px;
+  background-color: var(--Dark-colour);
 }
 
 .button-back-to-top img {
   width: 30px;
 }
 
+/* ==================================== */
+
+/* ============ MENU TOGGLE ============ */
+
 @media screen and (max-width: 800px) {
   #menu {
-    display: block;
     position: absolute;
-    width: 100%;
     top: 70px;
     right: 0;
-    background-color: var(--Dark-colour);
+
+    display: block;
+
+    width: 100%;
     height: 0px;
-    transition: 0.6s all;
-    z-index: 1000;
+
     visibility: hidden;
     overflow-y: hidden;
     text-align: center;
+
+    background-color: var(--Dark-colour);
+
+    transition: 0.4s all;
+    z-index: 1000;
   }
 
   #nav.active #menu {
@@ -526,28 +631,32 @@ footer img:hover {
   #btn-mobile {
     display: flex;
     flex-direction: column;
-    gap: 7px;
     padding: 0.5rem 1rem;
+    gap: 7px;
+
     border: none;
     background: none;
     cursor: pointer;
   }
 
   #hamburger {
-    color: white;
     display: block;
     height: 3px;
-    border-radius: 2px;
     width: 26px;
+
+    border-radius: 2px;
     background: currentColor;
+    color: white;
   }
 
   #hamburger:nth-child(2),
   #hamburger:nth-child(3) {
+    position: relative;
+
     display: block;
     background: currentColor;
-    transition: 0.3s;
-    position: relative;
+
+    transition: 0.2s;
   }
 
   #nav.active #hamburger:nth-child(1) {
@@ -564,6 +673,10 @@ footer img:hover {
     top: -9.05px;
   }
 }
+
+/* ==================================== */
+
+/* ============ RESPONSIVE ============ */
 
 @media screen and (min-width: 800px) {
   .container .column-a {
@@ -598,8 +711,13 @@ footer img:hover {
     text-align: left;
   }
 
+  .about-text {
+    align-items: flex-start;
+  }
+
   .about-text p {
-    width: 60%;
+    width: 70%;
+
     text-align: left;
     align-items: flex-start;
   }
@@ -627,10 +745,10 @@ footer img:hover {
   }
 
   .skils-img {
-    gap: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 40px;
   }
 
   .cards {
@@ -645,3 +763,5 @@ footer img:hover {
     width: 381px;
   }
 }
+
+/* ==================================== */
