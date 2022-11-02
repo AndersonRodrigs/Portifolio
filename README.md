@@ -5,7 +5,7 @@
 ## Sobre o projeto:
 Portifólio pessoal. 
 
-[🔗 Clique aqui para acessar](https://andersonrodrigs.github.io/Calculadora-De-Medias/)
+[🔗 Clique aqui para acessar](http://anderson-rodrigues-portifolio.vercel.app/)
 
 ## 🛠 Tecnologias:
 - HTML
