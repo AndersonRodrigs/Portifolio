@@ -257,6 +257,11 @@ p {
 
 .about-text p a {
   color: var(--Dark-colour);
+  transition: .2s;
+}
+
+#about .about-text p a:hover {
+  color: var(--Secondary-colour);
 }
 
 /* ==================================== */
